@@ -1,4 +1,4 @@
-language: node_js
+anguage: node_js
 node_js:
   - 12
 branches:
@@ -6,15 +6,13 @@ branches:
     - master
 install:
   # - npm install
-  - ls -al
-  - pwd
   true # 什么也不做
 before_script:
 script:
-  - ls -al
-  - pwd
   # - npm run build
   true # 什么也不做
 after_script:
-  - ls -al
   - pwd
+  - ls -al
+  - return 0
+  
