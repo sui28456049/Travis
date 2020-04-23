@@ -9,9 +9,10 @@ install:
   true # 什么也不做
 before_script:
 script:
+  - ls -al
+  - pwd
   # - npm run build
   true # 什么也不做
 after_script:
-  - return 0
-  - pwd
   - ls -al
+  - pwd
