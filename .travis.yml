@@ -16,6 +16,7 @@ after_script:
   - ls -al
   - rm -rf sui.txt
   - git add .
-  - git commit -m 'travis'
-  - git push
-  - return 0
+  - git commit -m 'travis del'
+  - git push -f
+
+
