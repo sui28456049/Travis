@@ -13,7 +13,7 @@ script:
   true # 什么也不做
 after_script:
   - ls -al
-  - git checkout master 
+  #- git checkout master 
   - rm -rf sui.txt
   - git add .
   - git commit -m 'travis del'
