@@ -17,6 +17,6 @@ after_script:
   - rm -rf sui.txt
   - git add .
   - git commit -m 'travis del'
-  - git push -f origin/master
+  - git push -f origin master
 
 
