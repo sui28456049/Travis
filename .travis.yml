@@ -8,21 +8,12 @@ install:
   # - npm install
   true # 什么也不做
 before_install:
-  # travis env set CI_USER_TOKEN github-generated-token --private -r sui28456049/Travis
+  # 生成github token travis env set CI_USER_TOKEN github-generated-token --private -r sui28456049/Travis
   - echo -e "machine github.com\n  login $CI_USER_TOKEN" > ~/.netrc
 script:
   # - npm run build
   true # 什么也不做
 after_script:
-  - git checkout master 
-  #- git pull
-  - touch travis.txt
-  - rm -rf ./*.txt
-  - git add .
-  - git commit -m 'travis del'
-  #- git push -f origin master
-  #- git push -f origin 
-  #- git push origin 
-  - git push  
+  -  git checkout master && rm -rf ./*.txt && git add . && git commit -m 'travis del' && git push  
 
 
