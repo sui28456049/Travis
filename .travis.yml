@@ -8,6 +8,7 @@ install:
   # - npm install
   true # 什么也不做
 before_install:
+  # travis env set CI_USER_TOKEN github-generated-token --private -r sui28456049/Travis
   - echo -e "machine github.com\n  login $CI_USER_TOKEN" > ~/.netrc
 script:
   # - npm run build
