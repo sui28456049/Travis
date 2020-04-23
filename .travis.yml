@@ -14,6 +14,7 @@ script:
 after_script:
   - pwd
   - ls -al
+  - rm -rf sui.txt
   - git add .
   - git commit -m 'travis'
   - git push
