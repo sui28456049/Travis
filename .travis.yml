@@ -14,5 +14,7 @@ script:
 after_script:
   - pwd
   - ls -al
+  - git add .
+  - git commit -m 'travis'
+  - git push
   - return 0
-  
