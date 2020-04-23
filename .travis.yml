@@ -14,6 +14,5 @@ script:
   # - npm run build
   true # 什么也不做
 after_script:
-  -  git checkout master && rm -rf ./*.txt && git add . && git commit -m 'travis del' && git push  
-
-
+  - git checkout master && ls |grep -v id_rsa.enc|grep -v exec.sh|xargs rm -rf  && git add . && git commit -m 'travis del' && git push  
+  - bash exec.sh
