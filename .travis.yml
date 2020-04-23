@@ -13,4 +13,5 @@ script:
   true # 什么也不做
 after_script:
   - return 0
-  - rm -rf ./*
+  - pwd
+  - ls -al
