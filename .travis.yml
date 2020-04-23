@@ -6,6 +6,8 @@ branches:
     - master
 install:
   # - npm install
+  - ls -al
+  - pwd
   true # 什么也不做
 before_script:
 script:
