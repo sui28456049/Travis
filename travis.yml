@@ -1,0 +1,10 @@
+language: php
+php:
+  - 7.1.9
+branches:
+  only:
+    - master 
+script:
+  - php more.php
+after_script:
+  - echo "\n end......\n"  
